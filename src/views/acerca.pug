@@ -1,0 +1,13 @@
+extends layout 
+block content 
+    section.acerca 
+        h2.section-title Acerca del Proyecto 
+
+        .acerca-contenido 
+            h3 Sobre el Proyecto 
+            p= proyecto.descripcion 
+
+            h3 Sobre el Autor 
+            .autor-info 
+                p.autor-nombre= autor.nombre 
+                p.autor-descripcion= autor.descripcion

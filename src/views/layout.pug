@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title= titulo 
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        header.header 
+            .container 
+                h1.logo MuseArte 
+                nav.nav 
+                    ul.nav-item 
+                        a.nav-item
+                            a(href="/") Inicio
+                        a.nav-item
+                            a(href="/galeria") Galería
+                        a.nav-item
+                            a(href="/acerca") Acerca de
+        main.main
+            .container 
+                block content
+        footer.footer
+            .container 
+                p © 2023 MuseArte. Todos los derechos reservados.
+                p Desarrollado por [Dana Pacheco]

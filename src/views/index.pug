@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    section.hero
+        h2.hero-title Bienvenido al Museo Virtual de Arte Moderno
+        p.hero-subtitle Un espacio digital para explorar y apreciar el arte contemporáneo
+        a.btn(href="/galeria") Explorar Galería
+    section.destacadas
+        h2.section-tittle Obras Destacadas
+        .obras-grid
+            if obrasDestacadas && obrasDestacadas.length > 0
+                each obra in obrasDestacadas
+                    .obra-card
+                        .obra-img-container
+                            img.obra-img(src=obra.imagen, alt=obra.titulo)
+                        .obra-info
+                            h3.obra-titulo= obra.titulo
+                            p.obra-autor= obra.autor
+                            p.obra-anio= obra.año
+                            a.obra-link(href=`/obra/${obra.id}`) Ver detalles
+            else
+                p No hay obras destacadas disponibles en este momento.

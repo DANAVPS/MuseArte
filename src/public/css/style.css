@@ -1,0 +1,281 @@
+/* Estilos generales */
+:root {
+    --color-primary: #2c3e50;
+    --color-secondary: #3498db;
+    --color-accent: #e74c3c;
+    --color-background: #f5f5f5;
+    --color-text: #333;
+    --font-primary: 'Helvetica Neue', Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.logo-container {
+    margin-bottom: 1rem;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.nav-item {
+    margin: 0 1.5rem;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 1.1rem;
+}
+
+.nav-item a:hover {
+    color: var(--color-secondary);
+}
+
+/* Main content */
+.main {
+    min-height: calc(100vh - 140px);
+    padding: 2rem 0;
+}
+
+/* Hero section */
+.hero {
+    background-color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: var(--color-secondary);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* Section titles */
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+    text-align: center;
+}
+
+/* Obras grid */
+.obras-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.obra-card {
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.obra-card:hover {
+    transform: translateY(-5px);
+}
+
+.obra-img-container {
+    height: 200px;
+    overflow: hidden;
+}
+
+.obra-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.obra-card:hover .obra-img {
+    transform: scale(1.05);
+}
+
+.obra-info {
+    padding: 1.5rem;
+}
+
+.obra-titulo {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+}
+
+.obra-autor,
+.obra-anio {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.obra-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--color-secondary);
+    text-decoration: none;
+}
+
+.obra-link:hover {
+    text-decoration: underline;
+}
+
+/* Obra detalle */
+.obra-detalle {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.obra-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.obra-subtitulo {
+    color: #666;
+    font-style: italic;
+}
+
+.obra-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.obra-img-detalle {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.obra-descripcion h3 {
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+}
+
+.obra-navegacion {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Acerca de */
+.acerca {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.acerca-contenido h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+}
+
+.autor-info {
+    margin-bottom: 2rem;
+}
+
+.autor-nombre {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Error page */
+.error-page {
+    text-align: center;
+    padding: 3rem;
+}
+
+.error-mensaje {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .obra-content {
+        grid-template-columns: 1fr;
+    }
+
+    .obras-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}

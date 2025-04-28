@@ -1,0 +1,15 @@
+extends layout 
+
+block content 
+    section-galeria 
+        h2.section-tittle Galería de Obras 
+        .obras-grid
+        each obra in obras
+            .obra-card
+                .obra-img-container 
+                    img(src=obra.imagen, alt=obra.titulo)
+                .obra-info 
+                    h3.Obra.titulo= obra.titulo
+                    p.obra-autor= obra.autor
+                    p.obra-anio=obra.año 
+                    a.obra-link(href=`/obra/${obra.id}`) Ver Detalles
