@@ -13,10 +13,10 @@ const obrasArte = [
     },
     {
         id: 2,
-        titulo: "Convergencia Urbana",
+        titulo: "Dualidades entre los Mundos",
         autor: "Miguel Serrano",
         año: 2019,
-        descripcion: "Un estudio visual del ritmo de la vida urbana moderna, donde líneas geométricas y colores vibrantes representan el constante movimiento y energía de las grandes ciudades. La obra captura la sensación de estar en medio del bullicio metropolitano.",
+        descripcion: "es una obra que parece narrar un encuentro misterioso entre dos dimensiones que se cruzan pero nunca se mezclan. Las figuras centrales, estilizadas y geométricas, podrían representar dos entidades opuestas: una del mundo tangible, marcada por colores vivos y cálidos, y otra del reino abstracto, envuelta en tonos fríos y patrones inquietantes. Sus miradas no se encuentran, como si fueran conscientes de la imposibilidad de su conexión.",
         imagen: "/img/obra2.jpg"
     },
     {
@@ -29,18 +29,18 @@ const obrasArte = [
     },
     {
         id: 4,
-        titulo: "Metamorfosis Digital",
+        titulo: "Sinfonía del Caos y la Energía",
         autor: "Gabriel Torres",
         año: 2020,
-        descripcion: "Una exploración de la intersección entre tecnología y naturaleza, donde elementos orgánicos se transforman gradualmente en patrones digitales. La obra cuestiona la frontera cada vez más difusa entre lo natural y lo artificial en nuestra sociedad.",
+        descripcion: "En esta obra vibrante, el artista nos sumerge en un mundo de formas geométricas y patrones caóticos que, paradójicamente, encuentran armonía dentro del desorden. Las explosiones de colores -naranjas cálidos, azules eléctricos, verdes intensos y rojos profundos- hablan de una energía vital que se despliega en todas direcciones. Los elementos que sugieren caras, instrumentos musicales y estructuras urbanas parecen contar historias fragmentadas de una ciudad que nunca duerme, una metrópolis de emociones entrelazadas.",
         imagen: "/img/obra4.png"
     },
     {
         id: 5,
-        titulo: "Expansión Cromática",
+        titulo: "El Árbol de los Sueños Cromáticos",
         autor: "Sofía Vega",
         año: 2023,
-        descripcion: "Un estudio expresivo sobre el color y su capacidad para transmitir emociones. A través de capas superpuestas de pigmentos vibrantes, la artista crea un efecto visual de expansión y movimiento que cambia según la perspectiva del observador.",
+        descripcion: "Esta obra ofrece un contraste sereno, centrándose en un majestuoso árbol que se alza en el centro de un paisaje onírico. Su copa, un estallido de colores que transita por todos los tonos del arco iris, parece contener los sueños de aquellos que alguna vez descansaron bajo su sombra. La quietud del fondo -un cielo pastel en tonos de azul, rosa y amarillo- realza la vitalidad del árbol, que parece desafiar las leyes del tiempo y el espacio con su magnificencia.",
         imagen: "/img/obra5.jpg"
     }
 ]
